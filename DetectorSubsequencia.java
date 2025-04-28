@@ -121,10 +121,10 @@ public class DetectorSubsequencia {
 
         String[] S_line12 = {"buy Teste1", "buy Teste2", "buy Teste3"};
 
-        long startTime12 = System.nanoTime();
+        long tempoInicial12 = System.nanoTime();
         System.out.println("Caso 12: " + detector.hasTrend(S12, S_line12));
-        long endTime12 = System.nanoTime();
-        System.out.println("Tempo de execução (nanosegundos) Caso 12: " + (endTime12 - startTime12));
+        long tempoFinal12 = System.nanoTime();
+        System.out.println("Tempo de execução (nanosegundos) Caso 12: " + (tempoFinal12 - tempoInicial12));
 
         /**
          * Caso 13: Pior caso, onde não existe
@@ -132,10 +132,10 @@ public class DetectorSubsequencia {
          */
         String[] S_line13 = {"buy NaoExiste1", "buy NaoExiste2"};
 
-        long startTime13 = System.nanoTime();
+        long tempoInicial13 = System.nanoTime();
         System.out.println("Caso 13 (pior caso): " + detector.hasTrend(S12, S_line13));
-        long endTime13 = System.nanoTime();
-        System.out.println("Tempo de execução (nanosegundos) Caso 13: " + (endTime13 - startTime13));
+        long tempoFinal13 = System.nanoTime();
+        System.out.println("Tempo de execução (nanosegundos) Caso 13: " + (tempoFinal13 - tempoInicial13));
     }
     
 }
